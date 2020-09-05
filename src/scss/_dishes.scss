@@ -1,0 +1,76 @@
+.dishes{
+  background: url("../assets/img/specialty's-bg-3.png") no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__section-title {
+    padding-bottom: 4rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 0.5em;
+  }
+  &__wrap{
+    position: relative;
+    display: flex;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  @include img-width;
+
+  &__frame {
+    @include frame;
+    left: 0;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 3.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    @include hr-title;
+  }
+  &__subtitle {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: $white;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    font-size: 18px;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 1rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.swiper-pagination-bullet-active{
+  background: rgba(255, 255, 255, 1);
+}
+
+.swiper-pagination{
+  position: static;
+  margin-top: 4.5rem;
+}
