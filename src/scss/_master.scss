@@ -1,0 +1,28 @@
+.master {
+  background: url("../assets/img/specialty's-bg.png") no-repeat;
+  background-size: cover;
+  &__wrap{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__title{
+    padding-top: 4rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__frame{
+    @include frame;
+    left: 0;
+  }
+  @include img-width;
+}
+
+.content-master {
+  @include content($white);
+  margin-left: 8rem;
+}
+

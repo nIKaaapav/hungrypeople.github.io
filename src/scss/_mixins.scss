@@ -1,0 +1,62 @@
+@mixin center-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hr-title {
+  &:after{
+    content: "";
+    display: block;
+    margin: 20px auto 0;
+    width: 60px;
+    border: 3px solid #E8C300;
+    border-radius: 50px;
+  }
+}
+
+@mixin frame() {
+
+    position: absolute;
+    top: calc(50% - 25rem / 2);
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    border: 2rem solid $yelloy;
+    border-radius: 0.8rem;
+
+}
+
+@mixin content($color){
+  width: 63rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 3.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color;
+    @include hr-title;
+  }
+  &__subtitle {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: $color;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    font-size: 18px;
+    text-align: center;
+    color: $color;
+  }
+}
+
+@mixin img-width {
+  &__img {
+    width: 47.5rem;
+  }
+}

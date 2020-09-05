@@ -1,0 +1,15 @@
+.about {
+  position: relative;
+  display: flex;
+  @include img-width;
+  &__frame{
+    @include frame;
+    right: 0;
+  }
+
+}
+
+.content-about {
+  margin-right: 8rem;
+  @include content($black);
+}
