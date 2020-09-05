@@ -15,8 +15,7 @@
   }
 }
 
-@mixin frame() {
-
+@mixin frame {
     position: absolute;
     top: calc(50% - 25rem / 2);
     display: block;

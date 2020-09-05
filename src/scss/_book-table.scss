@@ -1,0 +1,73 @@
+.book{
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  &__wrap{
+    position: relative;
+    display: flex;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  @include img-width;
+
+  &__frame {
+    @include frame;
+    right: 0;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 3.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    @include hr-title;
+  }
+  &__form{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem 1rem;
+  }
+  &__input{
+    font-size: 1.4rem;
+    border: none;
+    background: $input-bg;
+    border-radius: 5px;
+    padding: 1.5rem 0 1.5rem 0.5rem;
+  }
+  &__button{
+    grid-column-end: span 2;
+    border-radius: 5px;
+    padding: 2rem 0;
+    background-color: $yelloy;
+    border: none;
+    color: $white;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  &__time-work{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $grey-text;
+    opacity: 0.5;
+  }
+  &__time{
+    font-weight: bold;
+  }
+  &__contact{
+    font-weight: bold;
+    color: $grey-text;
+    text-decoration: none;
+  }
+}
